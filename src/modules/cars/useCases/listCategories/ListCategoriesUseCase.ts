@@ -6,7 +6,7 @@ export class ListCategoriesUseCase {
 
   execute(): Category[] { 
     const categories = this.categoriesRepository.list();
-
+    console.log(categories);
     return categories;
   }
 }
